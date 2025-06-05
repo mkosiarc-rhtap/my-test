@@ -536,8 +536,10 @@ spec:
         workspace: workspace
     - name: apply-tags
       params:
-      - name: IMAGE
+      - name: IMAGE_URL
         value: $(tasks.build-image-index.results.IMAGE_URL)
+      - name: IMAGE_DIGEST
+        value: $(tasks.build-image-index.results.IMAGE_DIGEST)
       - name: ADDITIONAL_TAGS
         value: ["tag1", "tag2"]
       runAfter:
@@ -547,7 +549,7 @@ spec:
         - name: name
           value: apply-tags
         - name: bundle
-          value: quay.io/konflux-ci/tekton-catalog/task-apply-tags:0.1@sha256:1c6f673fe100a49f58aaef62580c8adf0c397790964f4e7bac7fcd3f4d07c92e
+          value: quay.io/mkosiarc_rhtap/task-apply-tags@sha256:091b1bd36a157e473b77bd7c136a393d2250c92c437d0011ca09fb2f50dc0bc6
         - name: kind
           value: task
         resolver: bundles
