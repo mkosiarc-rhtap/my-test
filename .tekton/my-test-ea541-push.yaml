@@ -549,7 +549,7 @@ spec:
         - name: name
           value: apply-tags
         - name: bundle
-          value: quay.io/mkosiarc_rhtap/task-apply-tags@sha256:e8aa4656a00e8921c9b06bc159096bb8eccef11a4d7b4cbd3336b3672a5424d0
+          value: quay.io/mkosiarc_rhtap/task-apply-tags@sha256:f118dc4d67e64bda0fe8e354180b78a2cfd70aae52cc5f8eb4702c76a6257003
         - name: kind
           value: task
         resolver: bundles
