@@ -1,4 +1,5 @@
-FROM registry.access.redhat.com/ubi8/ubi:latest
+FROM registry.access.redhat.com/ubi9/ubi
 
-RUN dnf install -y git
+ADD https://certs.corp.redhat.com/certs/Current-IT-Root-CAs.pem /tmp/art
 
+CMD ["cat", "/tmp/art"]
