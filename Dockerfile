@@ -1,5 +1,3 @@
-FROM registry.access.redhat.com/ubi9/ubi
-
-ADD https://certs.corp.redhat.com/certs/Current-IT-Root-CAs.pem /tmp/art
-
-CMD ["cat", "/tmp/art"]
+FROM alpine:3.20
+RUN echo "hello sbom" > /hello.txt
+CMD ["cat", "/hello.txt"]
