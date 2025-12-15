@@ -218,9 +218,7 @@ spec:
         value: $(tasks.init.results.no-proxy)
       - name: ENV_VARS
         value:
-          - FOO=bar
-          - BAZ=qux
-          - LOG_LEVEL=debug
+          - VERSION=2.0.0
       runAfter:
       - prefetch-dependencies
       taskRef:
