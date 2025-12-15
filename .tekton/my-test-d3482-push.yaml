@@ -216,6 +216,11 @@ spec:
         value: $(tasks.init.results.http-proxy)
       - name: NO_PROXY
         value: $(tasks.init.results.no-proxy)
+      - name: ENV_VARS
+        value:
+          - FOO=bar
+          - BAZ=qux
+          - LOG_LEVEL=debug
       runAfter:
       - prefetch-dependencies
       taskRef:
@@ -223,7 +228,7 @@ spec:
         - name: name
           value: buildah
         - name: bundle
-          value: quay.io/konflux-ci/tekton-catalog/task-buildah:0.7@sha256:8b16e4e79853e3a3192f82e9f8930b79b04942bb389eaab4c44fb4d233ccefe6
+          value: quay.io/mkosiarc_rhtap/task-buildah@sha256:47532c6fd49b4fca8ce5237ff2e7e574df4b6662c153bfea7fb3af5fffb2d994
         - name: kind
           value: task
         resolver: bundles
