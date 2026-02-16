@@ -207,9 +207,6 @@ spec:
         value: $(params.image-expires-after)
       - name: COMMIT_SHA
         value: $(tasks.clone-repository.results.commit)
-      - name: BUILD_ARGS
-        value:
-        - $(params.build-args[*])
       - name: BUILD_ARGS_FILE
         value: "args.conf"
       - name: PRIVILEGED_NESTED
