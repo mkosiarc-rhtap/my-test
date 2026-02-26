@@ -244,7 +244,7 @@ spec:
         - name: name
           value: build-image-index
         - name: bundle
-          value: quay.io/mkosiarc_rhtap/build-image-index@sha256:343530d2ed92b75c96e995afe2498a1d57236e5901e84d2455f1f14f4f64e873
+          value: quay.io/mkosiarc_rhtap/build-image-index@sha256:0f01f38f81bec96370895876b263c952334ad95c0a58334b2ea886d58a604e25
         - name: kind
           value: task
         resolver: bundles
