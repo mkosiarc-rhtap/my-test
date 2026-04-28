@@ -248,7 +248,7 @@ spec:
       - name: IMAGE
         value: $(params.output-image)
       - name: ALWAYS_BUILD_INDEX
-        value: $(params.build-image-index)
+        value: False
       - name: IMAGES
         value:
         - $(tasks.build-images.results.IMAGE_REF[*])
