@@ -282,7 +282,7 @@ spec:
         - name: name
           value: source-build
         - name: bundle
-          value: quay.io/mkosiarc_rhtap/source-build-task@sha256:f307e912c91b49a6e2ab0c3c9bca637d12f403671ca56ea73d860335959a04cd
+          value: quay.io/mkosiarc_rhtap/source-build-task@sha256:b3335ebccdcc1f91e39ad99c586b2d1685a0169b540bf688ec75d22dd7c0683e
         - name: kind
           value: task
         resolver: bundles
